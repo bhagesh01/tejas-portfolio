@@ -14,9 +14,7 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
-// import { div } from "framer-motion/client";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import { button, div } from "framer-motion/client";
 import MagicButton from "@/components/shared/MagicButton";
 import { ArrowBigDown } from "lucide-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
@@ -27,7 +25,7 @@ const page = () => {
   const [preview , setPreview] = useState(false);
 
   const setPreviewState = ()=>{
-    setPreview(true);
+    
   }
 
    
@@ -80,7 +78,7 @@ const words = `Welcome to the Projects Section . As it is in under development p
         position="right"
         />
       </button>) : (<button 
-    onClick={()=>{setPreviewState()}}
+    onClick={()=>{setPreview(true)}}
     className="w-fit">
       <MagicButton 
       title="Preview the section Builded So far"

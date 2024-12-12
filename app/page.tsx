@@ -8,7 +8,6 @@ import { Testimonials } from "@/components/pages/Testimonials";
 import Footer from "@/components/shared/Footer";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { navItems } from "@/lib/data";
-import { div } from "framer-motion/client";
 import { useEffect, useState } from "react";
 
 export default function Home() {
