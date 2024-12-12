@@ -82,7 +82,7 @@ export const FloatingNav = ({
           border: "1px solid rgba(210, 206, 206, 0.125)",
         }}
       >
-        {navItems.map((navItem: any, idx: number) => (
+        {navItems.map((navItem, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}

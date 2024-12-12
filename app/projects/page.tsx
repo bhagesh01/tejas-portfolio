@@ -20,13 +20,9 @@ import { ArrowBigDown } from "lucide-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { navItems } from "@/lib/data";
 
-const page = () => {
+const Page = () => {
 
   const [preview , setPreview] = useState(false);
-
-  const setPreviewState = ()=>{
-    
-  }
 
    
 const words = `Welcome to the Projects Section . As it is in under development process. Soon It will be in display and deployed mode. Thanks for visiting.
@@ -34,18 +30,6 @@ const words = `Welcome to the Projects Section . As it is in under development p
 
 
   return (
-  //   <BentoGrid className="max-w-4xl mx-auto py-10">
-  //   {items.map((item, i) => (
-  //     <BentoGridItem
-  //       key={i}
-  //       title={item.title}
-  //       description={item.description}
-  //       header={item.header}
-  //       icon={item.icon}
-  //       className={i === 3 || i === 6 ? "md:col-span-2" : ""}
-  //     />
-  //   ))}
-  // </BentoGrid>
 
 
   <div className="min-h-screen md:px-20 px-6 flex flex-col items-center justify-center py-20 bg-black">
@@ -93,7 +77,7 @@ const words = `Welcome to the Projects Section . As it is in under development p
   )
 }
 
-export default page;
+export default Page;
 
 
 const Skeleton = () => (
