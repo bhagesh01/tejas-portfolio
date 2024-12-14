@@ -61,7 +61,7 @@ const CurvedMenu = () => {
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed top-10 right-10 ${isOpen ? "z-[8783239]" :  "z-[27334843]"}
+        className={`fixed md:hidden  top-10 right-10 ${isOpen ? "z-[8783239]" :  "z-[27334843]"}
           bg-black text-white dark:text-white p-3 rounded-full shadow-lg focus:outline-none`}
           >
         {isOpen ? (<CircleX />) : (<Menu />)}
