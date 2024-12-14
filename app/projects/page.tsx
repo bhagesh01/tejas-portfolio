@@ -35,7 +35,7 @@ const words = `Welcome to the Projects Section . As it is in under development p
   <div className="min-h-screen md:px-20 px-6 flex flex-col items-center justify-center py-20 bg-black">
 
      <FloatingNav navItems={navItems} />
-    <div>
+    <div className="">
       {
         preview ? (    <BentoGrid className="max-w-4xl mx-auto py-10">
           {items.map((item, i) => (

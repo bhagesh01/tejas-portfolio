@@ -1,5 +1,5 @@
 import React from "react";
-import { LocateIcon } from "lucide-react";
+import { Send } from "lucide-react";
 import MagicButton from "../shared/MagicButton";
 import { BackgroundBeams } from "../ui/background-beams";
 
@@ -16,10 +16,10 @@ export function ConnectMe() {
   Reach out to me today and let&apos;s discuss how I can help you
   achieve your goals.
 </p>
-<a className="relative z-10" href="mailto:bansodebhageshbb08@gmail.com">
+<a className="relative z-10 gap-3" href="mailto:bansodebhageshbb08@gmail.com">
   <MagicButton
     title="Let's get in touch"
-    icon={<LocateIcon />}
+    icon={<Send />}
     position="right"
     />
 </a>

@@ -36,6 +36,16 @@ export const FloatingNav = ({
     }
   }, [dark]);
 
+  
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/BHAGESH-BANSODE-RESUME-NEW.pdf";
+    link.download = "BHAGESH-BANSODE-RESUME.pdf";
+    link.click();
+  };
+
+
+
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
@@ -72,7 +82,7 @@ export const FloatingNav = ({
           // change rounded-full to rounded-lg
           // remove dark:border-white/[0.2] dark:bg-black bg-white border-transparent
           // change  pr-2 pl-8 py-2 to px-10 py-5
-          "flex max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-10 py-3 rounded-full border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-5",
+          "md:flex hidden max-w-0 md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-10 py-3 rounded-full border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center md:space-x-5 space-x-3",
           className
         )}
         style={{
@@ -93,10 +103,12 @@ export const FloatingNav = ({
             <span className="block sm:hidden">{navItem.icon}</span>
             {/* add !cursor-pointer */}
             {/* remove hidden sm:block for the mobile responsive */}
-            <span className=" text-default font-semibold !cursor-pointer">{navItem.name}</span>
+            <span className="text-sm font-semibold !cursor-pointer">{navItem.name}</span>
           </Link>
         ))}
-
+<button onClick={handleDownload}>
+  Resume
+</button>
 <button
           onClick={() => setDark((prev) => !prev)}
           className=" md:mt-0 p-2 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition duration-200"

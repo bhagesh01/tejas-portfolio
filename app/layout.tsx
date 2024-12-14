@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Menu from "@/components/shared/Menu";
+import DarkMode from "@/components/shared/DarkMode";
+import CurvedMenu from "@/components/shared/Menu";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,8 +30,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
       >
+        <div className="fixed z-[8989] px-20 w-full ">
+        <DarkMode/>
+        <CurvedMenu/>
+        </div>
         {children}
       </body>
     </html>
