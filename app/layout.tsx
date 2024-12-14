@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Menu from "@/components/shared/Menu";
 import DarkMode from "@/components/shared/DarkMode";
 import CurvedMenu from "@/components/shared/Menu";
 
