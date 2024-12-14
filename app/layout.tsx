@@ -31,10 +31,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
       >
-        <div className="fixed z-[8989] px-20 w-full ">
+        
         <DarkMode/>
         <CurvedMenu/>
-        </div>
         {children}
       </body>
     </html>

@@ -54,13 +54,16 @@ const CurvedMenu = () => {
 
 
   return (
-    <div className="md:hidden h-screen w-full bg-transparent">
+    // <div className="fixed md:hidden z-50 w-fit h-fit">
+    <>
       {/* Menu Button */}
+
+
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="absolute top-10 right-10 z-20
-        bg-black text-white dark:text-white p-3 rounded-full shadow-lg focus:outline-none"
-      >
+        className={`fixed top-10 right-10 ${isOpen ? "z-[8783239]" :  "z-[27334843]"}
+          bg-black text-white dark:text-white p-3 rounded-full shadow-lg focus:outline-none`}
+          >
         {isOpen ? (<CircleX />) : (<Menu />)}
       </button>
 
@@ -69,11 +72,11 @@ const CurvedMenu = () => {
         initial="closed"
         animate={isOpen ? "open" : "closed"}
         variants={menuVariants}
-        className={`fixed inset-0 z-10 bg-white dark:bg-[#1A1A1E] dark:text-white text-black   ${!isOpen && "bg-transparent"}  `}
-      >
+        className={`fixed inset-0 ${isOpen ? "z-[8783238]" : "-z-10"}  bg-white dark:bg-[#1A1A1E] dark:text-white text-black   ${!isOpen && "bg-transparent"}  `}
+        >
         <motion.ul
           className="flex flex-col items-center justify-center h-full space-y-8 text-4xl font-semibold"
-        >
+          >
           {[
             "Home",
             "About",
@@ -87,7 +90,7 @@ const CurvedMenu = () => {
               key={index}
               variants={menuItemVariants}
               className="cursor-pointer hover:text-gray-200"
-            >
+              >
               {item}
             </motion.li>
             </a>
@@ -101,7 +104,8 @@ const CurvedMenu = () => {
           </li>
         </motion.ul>
       </motion.div>
-    </div>
+      </>
+    // </div>
   );
 }
 
