@@ -1,6 +1,7 @@
 import { socialMedia } from '@/lib/data'
 import React from 'react'
 import { LinkPreview } from '../ui/link-preview'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -17,9 +18,9 @@ const Footer = () => {
               key={info.id}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300  bg-black"
             >
-              <a href={info.path} target="_blank" >
+              <Link href={info.path} target="_blank" >
                 <img src={info.img} alt="icons" className='dark:text-white -black' width={30} height={30} />
-              </a>
+              </Link>
             </div>
           ))}
         </div>
