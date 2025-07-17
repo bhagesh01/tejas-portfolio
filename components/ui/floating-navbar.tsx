@@ -37,12 +37,12 @@ export const FloatingNav = ({
   }, [dark]);
 
   
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/BHAGESH-BANSODE-RESUME-NEW.pdf";
-    link.download = "BHAGESH-BANSODE-RESUME.pdf";
-    link.click();
-  };
+  // const handleDownload = () => {
+  //   const link = document.createElement("a");
+  //   link.href = "/BHAGESH-BANSODE-RESUME-NEW.pdf";
+  //   link.download = "BHAGESH-BANSODE-RESUME.pdf";
+  //   link.click();
+  // };
 
 
 
