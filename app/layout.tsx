@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "@BHAGESH_BANSODE",
+  title: "@TEJAS",
   description: "Welcome to my Zone and Know about me.",
 };
 

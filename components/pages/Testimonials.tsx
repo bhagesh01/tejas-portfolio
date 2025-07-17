@@ -4,7 +4,7 @@ export function Testimonials() {
   const testimonials = [
     {
       quote:
-        "His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Bobby's enthusiasm for every facet of development truly stands out.",
+        "His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Tejas enthusiasm for every facet of development truly stands out.",
       name: "Aftab Attar",
       designation: "Product Manager at TechFlow",
       src: "/aftabTesti.png",

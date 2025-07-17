@@ -106,9 +106,9 @@ export const FloatingNav = ({
             <span className="text-sm font-semibold !cursor-pointer">{navItem.name}</span>
           </Link>
         ))}
-<button onClick={handleDownload}>
+{/* <button onClick={handleDownload}>
   Resume
-</button>
+</button> */}
 <button
           onClick={() => setDark((prev) => !prev)}
           className=" md:mt-0 p-2 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition duration-200"

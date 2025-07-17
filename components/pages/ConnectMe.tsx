@@ -16,7 +16,7 @@ export function ConnectMe() {
   Reach out to me today and let&apos;s discuss how I can help you
   achieve your goals.
 </p>
-<a className="relative z-10 gap-3" href="mailto:bansodebhageshbb08@gmail.com">
+<a className="relative z-10 gap-3" href="mailto:tejasdhanawate03gmail.com">
   <MagicButton
     title="Let's get in touch"
     icon={<Send />}

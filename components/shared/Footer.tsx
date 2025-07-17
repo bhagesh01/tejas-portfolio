@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div className="flex px-10 py-10 md:px-36 md:flex-row flex-col justify-between items-center gap-4 border-t-[1px] border-gray-700 rounded-tr-3xl rounded-tl-3xl">
         <p className=" text-default md:font-normal font-light md:text-lg">
-          Copyright © 2024 <LinkPreview url="https://github.com/bhagesh01" className="font-bold">
-          Bhagesh Bansode
+          Copyright © 2025 <LinkPreview url="https://github.com/Tejass087" className="font-bold">
+          TEJAS DHANWANTE
         </LinkPreview>
         </p>
 

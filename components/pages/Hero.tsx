@@ -24,7 +24,7 @@ export function Hero() {
         Transforming Concepts into Seamless User Experiences
         </div>
         <div className="font-extralight text-default md:text-3xl dark:text-neutral-200 py-4">
-        Hi! I&apos;m Bobby, a Next.js Developer based in INDIA.
+        Hi! I&apos;m TEJAS, a Next.js Developer based in INDIA.
         </div>
         <a href="#projects">
         <button className="bg-black dark:bg-white rounded-full font-medium w-fit text-white dark:text-black px-8 py-2">
