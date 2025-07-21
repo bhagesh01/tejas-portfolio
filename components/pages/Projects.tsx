@@ -80,13 +80,13 @@ const RecentProjects = () => {
         ))}
       </div>
       <div className="text-center">
-      <Link className="relative z-10 w-fit" href="/projects">
+      {/* <Link className="relative z-10 w-fit" href="/projects">
   <MagicButton
     title="See All Projects"
     icon={<ArrowRight />}
     position="right"
     />
-</Link>
+</Link> */}
       </div>
     </div>
   );
