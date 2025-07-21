@@ -38,26 +38,43 @@ export const socialMedia = [
 export const projects = [
   {
     id: 1,
-    title: "TaskFlow - Collaborative Project Management Simplified",
-    des: "Task-Flow is a collaborative project management tool where teams can register their organization, create projects, and assign tasks. Team members can track progress, address issues, and streamline project workflows effectively",
-    img: "/task-flow.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg", "/fm.svg"],
-    link: "https://github.com/Tejass087",
+    title: "Skin Analysis and Virtual Makeup Recommendation System",
+    des: `Skin Analysis and Virtual Makeup Recommendation System §
+Technologies: Python, OpenCV, CNN (MobileNet/ResNet), Django, HTML/CSS/Bootstrap, SMTP, SQLite
+• Developed a web-based system that uses image processing and deep learning (CNN) to detect skin tone and acne
+from user-uploaded facial images.
+• Implemented a rule-based and similarity-based recommendation engine to suggest personalized skincare and makeup
+products.
+• Integrated email automation (SMTP) to deliver recommendations and designed a responsive Django-based frontend
+for user interaction`,
+    img: "skin.jpg",
+    link: "https://github.com/Tejass087/Skin-Care_Reccomadation",
   },
   {
     id: 2,
-    title: "Taskify - Efficient Task Creation and Tracking Tool",
-    des: "A task management tool where users can easily create, track, and prioritize tasks, helping to enhance productivity, streamline workflow, and ensure that important tasks are completed efficiently.",
-    img: "/taskify.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/nodejs.png", "/c.svg"],
-    link: "https://github.com/Tejass087",
+    title: "E-Commerce Customer Behavior Analysis",
+    des: `E-Commerce Customer Behavior Analysis
+• Developed a customer behavior analysis solution using Machine Learning to provide actionable insights for an e-commerce
+platform. The project focused on customer segmentation, behavior prediction, and personalized recommendations.
+• Applied K-Means Clustering to segment customers based on purchasing patterns, identifying categories like Frequent Shop-
+pers, Discount Lovers, and Big Spenders.
+• Built and deployed predictive models using XGBoost to forecast customer actions including purchase likelihood, churn risk, and
+product preferences.
+• Developed a personalized recommendation engine using Collaborative Filtering, enhancing customer experience and increasing
+sales.`,
+    img: "/chart.jpeg",
+    link: "https://github.com/Tejass087/E-commerce-customer-beheviour-analysis",
   },
   {
-    id: 3,
-    title: "Youtube Clone - Enjoy the youtube without youtube",
-    des: "A YouTube clone that allows users to upload, watch, and share videos. Features include user authentication, video search, comments, likes, and subscriptions for a streamlined video-sharing experience.",
-    img: "/youtube.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/Tejass087",
+     id: 3,
+    title: "DataWarehouse and Analytics Solution",
+    des: `Building DataWarehouse and Analytics Solution
+Technologies: Python (pandas, pyodbc), T-SQL, Medallion Architecture, ETL Pipelines, Star Schema Design
+• Designed and implemented a complete Data Warehouse system using SQL Server, based on the Medallion
+Architecture (Bronze, Silver, Gold layers)
+• Built and automated ETL pipelines using Python (pandas, pyodbc)
+• Developed a Star Schema with Fact and Dimension tables to support efficient analytical queries and reporting `,
+    img: "datawarehouse.jpeg",
+    link: "https://github.com/Tejass087/Data-Warehouse-System",
   },
 ];
